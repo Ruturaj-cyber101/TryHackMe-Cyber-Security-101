@@ -7,7 +7,7 @@ All rooms included here have been **personally completed by me** and are documen
 ---
 
 ## 👨‍💻 About Me
-Aspiring **Cyber Security / SOC Intern** building strong foundations in operating systems, Active Directory, command-line usage, and security fundamentals.
+I am a motivated Cyber Security student actively building hands-on skills through structured labs on TryHackMe. My focus is on developing a strong foundation in command-line operations, networking fundamentals, and security concepts relevant to SOC (Security Operations Center) roles. I document only the labs I have personally completed to maintain accuracy and credibility in my learning journey.
 
 ---
 
@@ -31,6 +31,23 @@ Aspiring **Cyber Security / SOC Intern** building strong foundations in operatin
 
 ### 🔹 Command Line
 - Windows Command Line
+- Windows PowerShell
+- Linux Shells
+- Shell Scripting & Components
+
+- ### ### 🔹 Networking Fundamentals
+
+- **Networking Concepts**  
+  Learned core networking principles including networks, devices, and data communication basics.
+
+- **Networking Core Protocols**  
+  Studied key protocols such as TCP, UDP, and IP and their role in data transmission.
+
+- **Networking Essentials**  
+  Covered practical networking essentials such as addressing, traffic flow, and network components.
+
+- **Networking Secure Protocols**  
+  Explored secure networking protocols and how encryption protects data in transit.
 
 ---
 
