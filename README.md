@@ -52,7 +52,17 @@ I am a motivated Cyber Security student actively building hands-on skills throug
   ### 🔹 Traffic Analysis & Packet Inspection
 
 - **Wireshark: The Basics**  
-  Hands-on introduction to packet capture and network traffic analysis using Wireshark.  
+  Hands-on introduction to packet capture and network traffic analysis using Wireshark.
+
+- **TCPDUMP: The Basics**  
+  Learned command-line packet capture and traffic analysis using tcpdump.  
+
+  ### 🔹 Network Reconnaissance
+
+- **Nmap: The Basics**  
+  Learned basic network scanning and service discovery using Nmap.  
+  
+  
   
 
 ---
