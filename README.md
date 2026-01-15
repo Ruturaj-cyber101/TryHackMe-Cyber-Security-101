@@ -49,6 +49,12 @@ I am a motivated Cyber Security student actively building hands-on skills throug
 - **Networking Secure Protocols**  
   Explored secure networking protocols and how encryption protects data in transit.
 
+  ### 🔹 Traffic Analysis & Packet Inspection
+
+- **Wireshark: The Basics**  
+  Hands-on introduction to packet capture and network traffic analysis using Wireshark.  
+  
+
 ---
 
 ## 🎯 Goal
