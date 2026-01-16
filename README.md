@@ -143,7 +143,7 @@ To analyze live network traffic and understand the difference between HTTP and H
 
 | HTTPS Traffic | <img width="1920" height="1200" alt="Screenshot 2026-01-16 004514" src="https://github.com/user-attachments/assets/7edcf618-e310-47ef-b3c7-4625de4cafe5" />
 
-## 🧪 Wireshark Lab – DNS Traffic Analysis
+## 🧪 Wireshark Lab 2 – DNS Traffic Analysis
 
 ### 🎯 Objective
 Capture and analyze DNS traffic using Wireshark to identify domain names, record types, and determine whether the traffic is normal or suspicious.
