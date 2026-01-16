@@ -60,7 +60,43 @@ I am a motivated Cyber Security student actively building hands-on skills throug
   ### 🔹 Network Reconnaissance
 
 - **Nmap: The Basics**  
-  Learned basic network scanning and service discovery using Nmap.  
+  Learned basic network scanning and service discovery using Nmap.
+
+📌 Wireshark Live Traffic Analysis (Hands-On Lab)
+🔹 Lab Type
+Real-World Practice (Local Machine)
+🔹 Tools Used
+Wireshark
+Windows 11
+🔹 Objective
+To capture and analyze live network traffic using Wireshark and understand how common protocols behave in real-time, focusing on skills required for a SOC Level 1 Analyst role.
+🔹 Lab Activities Performed
+Captured live network traffic using an active network interface
+Identified common network protocols such as:
+TCP
+UDP
+DNS
+TLS
+Applied display filters to isolate specific traffic (e.g., DNS, TCP)
+Analyzed HTTPS traffic using port 443
+Followed a TCP stream to understand session communication
+Observed DNS queries and responses
+Reviewed packet details including:
+Source and destination IP addresses
+Ports
+Flags (SYN, ACK, FIN)
+🔹 Key SOC Skills Practiced
+Network traffic monitoring
+Packet inspection and protocol identification
+Understanding encrypted traffic (HTTPS/TLS)
+Detecting normal network behavior
+Using Wireshark for incident investigation support
+🔹 Outcome
+This lab improved my practical understanding of live network traffic analysis and strengthened core skills required for SOC Level 1 / Cyber Security Intern positions.
+🔹 Evidence
+Live traffic captured using Wireshark
+Packet analysis performed in real time
+Screenshots and .pcapng file stored locally   
   
   
   
