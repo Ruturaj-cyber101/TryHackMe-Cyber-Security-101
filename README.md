@@ -186,13 +186,7 @@ Capture and analyze DNS traffic using Wireshark to identify domain names, record
 - Normal DNS traffic is common in daily network activity
 - No suspicious indicators observed in this lab
 
----
 
-### ✅ Lab Status
-✔ Completed  
-✔ Capture file saved  
-✔ Screenshot taken  
-✔ Added to GitHub
 
 
 ---
@@ -202,10 +196,45 @@ Capture and analyze DNS traffic using Wireshark to identify domain names, record
 - Useful for detecting data exposure risks
 - Fundamental skill for SOC Level 1 Analysts
 
----
 
-### 📁 Evidence
-- Capture File: `lab1-http-vs-https.pcapng`
+# Lab 3 – TCP 3-Way Handshake Analysis (Wireshark)
+
+## Objective
+To analyze and understand the TCP 3-way handshake process using Wireshark and identify TCP flags involved in establishing a connection.
+
+## Environment
+- OS: Windows 11  
+- Tool: Wireshark  
+- Network: Wi-Fi  
+- Capture Type: Live traffic  
+
+## What I Did
+1. Started live packet capture on the Wi-Fi interface.
+2. Applied display filter to focus on TCP traffic.
+3. Identified TCP packets involved in a connection setup.
+4. Analyzed TCP flags to confirm the 3-way handshake process.
+5. Captured and saved evidence for documentation.
+
+## Key Findings
+- **SYN** flag: Client initiating connection.
+- **SYN, ACK** flags: Server acknowledging and responding.
+- **ACK** flag: Client confirming connection establishment.
+- Protocol used: **TCP**
+- Connection established successfully with no anomalies detected.
+
+## SOC Relevance
+Understanding TCP handshakes is essential for:
+- Detecting abnormal connection attempts
+- Identifying SYN floods or scanning activity
+- Validating legitimate vs malicious network traffic
+
+## Evidence
+- Packet Capture File: `lab3-tcp-3way-handshake.pcapng`
+- Screenshot:
+- <img width="1920" height="1200" alt="Screenshot 2026-01-16 011420" src="https://github.com/user-attachments/assets/8f854128-6254-44bb-b9ef-c73bbd5a0537" />
+
+
+
   
   
   
