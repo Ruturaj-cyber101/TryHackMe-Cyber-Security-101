@@ -143,6 +143,57 @@ To analyze live network traffic and understand the difference between HTTP and H
 
 | HTTPS Traffic | <img width="1920" height="1200" alt="Screenshot 2026-01-16 004514" src="https://github.com/user-attachments/assets/7edcf618-e310-47ef-b3c7-4625de4cafe5" />
 
+## 🧪 Wireshark Lab – DNS Traffic Analysis
+
+### 🎯 Objective
+Capture and analyze DNS traffic using Wireshark to identify domain names, record types, and determine whether the traffic is normal or suspicious.
+
+---
+
+### 🛠 Tools Used
+- Wireshark
+- Windows 11
+- Wi-Fi Network Interface
+
+---
+
+### 🔍 Lab Steps
+1. Started live capture on the Wi-Fi interface
+2. Applied display filter:
+
+3. 3. Observed DNS query and response packets
+4. Analyzed domain name and DNS record type
+
+---
+
+### 🌐 Analysis Results
+- **Domain Name:** `wpad.communityfibre.co.uk`
+- **DNS Record Type:** `A`
+- **Protocol:** DNS
+- **Port:** 53
+- **Traffic Verdict:** Normal / Non-suspicious
+
+---
+
+### 📸 Evidence
+- <img width="1920" height="1200" alt="Screenshot 2026-01-16 010120" src="https://github.com/user-attachments/assets/37ef6978-a43f-49d0-9bbb-a0f9176f1c4b" />
+
+
+---
+
+### 🧠 SOC Analyst Notes
+- DNS typically uses UDP port 53
+- Normal DNS traffic is common in daily network activity
+- No suspicious indicators observed in this lab
+
+---
+
+### ✅ Lab Status
+✔ Completed  
+✔ Capture file saved  
+✔ Screenshot taken  
+✔ Added to GitHub
+
 
 ---
 
