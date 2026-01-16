@@ -97,6 +97,64 @@ This lab improved my practical understanding of live network traffic analysis an
 Live traffic captured using Wireshark
 Packet analysis performed in real time
 Screenshots and .pcapng file stored locally   
+
+## 🔬 Lab 1: HTTP vs HTTPS Traffic Analysis (Wireshark)
+
+### 🎯 Objective
+To analyze live network traffic and understand the difference between HTTP and HTTPS communication using Wireshark.
+
+---
+
+### 🛠 Tools Used
+- Wireshark
+- Windows 11
+- Wi-Fi Network
+
+---
+
+### 🧪 Lab Tasks Performed
+- Captured live network traffic
+- Identified HTTP traffic on port 80
+- Identified HTTPS traffic on port 443
+- Compared readable vs encrypted traffic
+- Saved capture file for analysis
+
+---
+
+### 🔍 Key Observations
+
+**HTTP (Port 80):**
+- Traffic is sent in plain text
+- URLs, headers, and requests are readable
+- Not secure
+
+**HTTPS (Port 443):**
+- Traffic is encrypted using TLS
+- Packet content is not readable
+- Secure communication
+
+---
+
+### 📸 Screenshots
+| Description | Evidence |
+|------------|----------|
+
+| HTTP Traffic | <img width="1920" height="1200" alt="Screenshot 2026-01-16 004026" src="https://github.com/user-attachments/assets/0eb4661e-1883-4ab6-adbe-11b2efd74711" />
+
+| HTTPS Traffic | <img width="1920" height="1200" alt="Screenshot 2026-01-16 004514" src="https://github.com/user-attachments/assets/7edcf618-e310-47ef-b3c7-4625de4cafe5" />
+
+
+---
+
+### 🧠 SOC Relevance
+- Helps identify insecure traffic
+- Useful for detecting data exposure risks
+- Fundamental skill for SOC Level 1 Analysts
+
+---
+
+### 📁 Evidence
+- Capture File: `lab1-http-vs-https.pcapng`
   
   
   
