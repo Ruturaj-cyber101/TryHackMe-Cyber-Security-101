@@ -234,7 +234,61 @@ Understanding TCP handshakes is essential for:
 - <img width="1920" height="1200" alt="Screenshot 2026-01-16 011420" src="https://github.com/user-attachments/assets/8f854128-6254-44bb-b9ef-c73bbd5a0537" />
 
 
+# Lab 4 – ICMP / Ping Traffic Analysis (Wireshark)
 
+## Objective
+To analyze ICMP (Internet Control Message Protocol) traffic using Wireshark and understand how ping (Echo Request and Echo Reply) works from a SOC Level 1 perspective.
+
+## Environment
+- OS: Windows 11  
+- Tool: Wireshark  
+- Network Interface: Wi-Fi  
+- Capture Type: Live traffic  
+- Command Used: ping 8.8.8.8  
+
+## Lab Setup
+1. Opened Wireshark and selected the Wi-Fi interface.
+2. Started live packet capture.
+3. Generated ICMP traffic using Command Prompt.
+4. Applied ICMP filter to analyze packets.
+5. Saved packet capture and collected evidence.
+
+## Steps Performed
+1. Started Wireshark capture on Wi-Fi interface.
+2. Opened Command Prompt and ran:
+3. Stopped ping after a few seconds.
+4. Applied display filter:
+5. Selected ICMP packets and analyzed protocol details.
+6. Stopped capture and saved the file.
+
+## Analysis & Findings
+- ICMP Echo Request:
+- Type: 8
+- Sent by client to check host availability.
+- ICMP Echo Reply:
+- Type: 0
+- Sent by destination host as a response.
+- ICMP does not use TCP or UDP.
+- ICMP works at the Network Layer (Layer 3).
+- No ports or TCP flags are used.
+
+## SOC Relevance
+ICMP analysis helps SOC analysts to:
+- Identify network connectivity checks
+- Detect ICMP floods or scanning activity
+- Distinguish normal ping traffic from malicious behavior
+
+## Conclusion
+The observed ICMP traffic represents normal ping activity. There were no signs of suspicious or malicious behavior in this capture.
+
+## Evidence
+- Packet Capture: `lab4-icmp-ping-analysis.pcapng`
+
+  ![Uploading Screenshot 2026-01-18 032534.png…]()
+
+
+## Status
+✅ Lab completed successfully
   
   
   
