@@ -286,6 +286,65 @@ The observed ICMP traffic represents normal ping activity. There were no signs o
 <img width="1920" height="1200" alt="Screenshot 2026-01-18 032534" src="https://github.com/user-attachments/assets/207cee37-9c37-443a-a540-c6ba41aeb1cc" />
 
   
+# 🧪 Wireshark Lab 5 – ARP Traffic Analysis
+
+## 🎯 Lab Objective
+To understand how ARP (Address Resolution Protocol) works, identify ARP requests, replies, and announcements, and analyze whether the traffic is normal or suspicious from a SOC Level 1 perspective.
+
+---
+
+## 🛠 Tools Used
+- Operating System: Windows 11
+- Tool: Wireshark
+- Network Interface: Wi-Fi
+
+---
+
+## 📌 Lab Setup
+- Wireshark installed and running
+- Active internet connection
+- Packet capture started on Wi-Fi interface
+- Display filter used:
+```plaintext
+arp
+```
+
+---
+
+## 🧾 Lab Tasks Performed
+1. Started packet capture on Wi-Fi interface
+2. Applied ARP display filter
+3. Observed ARP requests, replies, and announcements
+4. Selected an ARP packet for detailed analysis
+5. Captured screenshot for documentation
+6. Saved capture file
+7. Updated GitHub repository
+
+---
+
+## 🔍 Observations & Analysis
+
+### 1️⃣ ARP Request
+Observed multiple ARP requests such as:
+```plaintext
+Who has 192.168.1.74? Tell 192.168.1.74
+```
+
+This indicates a **Gratuitous ARP / ARP Announcement**, where a device announces its own IP address to the network.
+
+---
+
+### 2️⃣ ARP Packet Details
+From the selected packet:
+```plaintext
+Sender IP Address: 192.168.1.74
+Sender MAC Address: 80:c0:1e:12:24:2e
+Target IP Address: 192.168.1.74
+Target
+
+
+
+<img width="1920" height="1200" alt="Screenshot 2026-01-18 034341" src="https://github.com/user-attachments/assets/4d89c30f-88fa-43b6-a891-e91b6cc0c7fc" />
 
 
 ## Status
