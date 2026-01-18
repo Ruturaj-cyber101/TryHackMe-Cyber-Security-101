@@ -286,7 +286,11 @@ The observed ICMP traffic represents normal ping activity. There were no signs o
 <img width="1920" height="1200" alt="Screenshot 2026-01-18 032534" src="https://github.com/user-attachments/assets/207cee37-9c37-443a-a540-c6ba41aeb1cc" />
 
   
-# 🧪 Wireshark Lab 5 – ARP Traffic Analysis
+
+## Status
+✅ Lab completed successfully
+  
+ # 🧪 Wireshark Lab 5 – ARP Traffic Analysis
 
 ## 🎯 Lab Objective
 To understand how ARP (Address Resolution Protocol) works, identify ARP requests, replies, and announcements, and analyze whether the traffic is normal or suspicious from a SOC Level 1 perspective.
@@ -321,12 +325,98 @@ arp
 7. Updated GitHub repository
 
 ---
-<img width="1920" height="1200" alt="Screenshot 2026-01-18 034341" src="https://github.com/user-attachments/assets/175ea326-d52b-4ca7-85d2-b0f6b9c01767" />
 
-## Status
-✅ Lab completed successfully
-  
-  
+## 🔍 Observations & Analysis
+
+### 1️⃣ ARP Request
+Observed multiple ARP requests such as:
+```plaintext
+Who has 192.168.1.74? Tell 192.168.1.74
+```
+
+This indicates a **Gratuitous ARP / ARP Announcement**, where a device announces its own IP address to the network.
+
+---
+
+### 2️⃣ ARP Packet Details
+From the selected packet:
+```plaintext
+Sender IP Address: 192.168.1.74
+Sender MAC Address: 80:c0:1e:12:24:2e
+Target IP Address: 192.168.1.74
+Target MAC Address: 00:00:00:00:00:00
+Destination MAC: ff:ff:ff:ff:ff:ff
+Opcode: Request (1)
+```
+
+This confirms it is an **ARP Announcement** and not an attack.
+
+---
+
+### 3️⃣ ARP Reply
+Observed ARP replies such as:
+```plaintext
+192.168.1.1 is at 80:69:1a:xx:xx:xx
+```
+
+This shows successful IP-to-MAC resolution on the local network.
+
+---
+
+### 4️⃣ Protocol Characteristics
+- Protocol: ARP
+- OSI Layer: Layer 2 (Data Link)
+- Transport Layer: Not applicable (No TCP/UDP)
+- Packet Length: 42 bytes
+- Communication Type: Broadcast (Request), Unicast (Reply)
+
+---
+
+### 5️⃣ Traffic Assessment
+- No duplicate IP addresses detected
+- No conflicting MAC addresses
+- No ARP flooding observed
+- No unsolicited ARP replies
+
+✅ Traffic behavior is **normal**.
+
+---
+
+## 🛡 SOC Level 1 Relevance
+From a SOC analyst perspective, ARP analysis is used to detect:
+- ARP Spoofing
+- Man-in-the-Middle (MITM) attacks
+- Rogue devices on the local network
+
+In this lab:
+- No Indicators of Compromise (IOCs) were found
+- ARP activity matches normal baseline behavior
+
+---
+
+## 📸 Evidence
+- One screenshot captured showing ARP packet details
+  <img width="1920" height="1200" alt="Screenshot 2026-01-18 034341" src="https://github.com/user-attachments/assets/03d7902d-3bca-4948-b046-e2568ee32ca5" />
+
+
+---
+
+## 📁 Artifacts Saved
+- Wireshark capture file (.pcapng)
+- Screenshot (.png)
+
+---
+
+## ✅ Lab Status
+**Completed**
+
+---
+
+## 🧠 Key Learning
+- ARP maps IP addresses to MAC addresses
+- Gratuitous ARP is normal behavior
+- SOC analysts monitor ARP to detect local network attacks
+- Wireshark is effective for Layer 2 traffic analysis 
   
 
 ---
