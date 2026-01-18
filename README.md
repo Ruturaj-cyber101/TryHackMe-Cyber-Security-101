@@ -284,7 +284,7 @@ The observed ICMP traffic represents normal ping activity. There were no signs o
 ## Evidence
 - Packet Capture: `lab4-icmp-ping-analysis.pcapng`
 
-  ![Uploading Screenshot 2026-01-18 032534.png…]()
+  
 
 
 ## Status
