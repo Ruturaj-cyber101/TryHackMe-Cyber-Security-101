@@ -321,31 +321,7 @@ arp
 7. Updated GitHub repository
 
 ---
-
-## 🔍 Observations & Analysis
-
-### 1️⃣ ARP Request
-Observed multiple ARP requests such as:
-```plaintext
-Who has 192.168.1.74? Tell 192.168.1.74
-```
-
-This indicates a **Gratuitous ARP / ARP Announcement**, where a device announces its own IP address to the network.
-
----
-
-### 2️⃣ ARP Packet Details
-From the selected packet:
-```plaintext
-Sender IP Address: 192.168.1.74
-Sender MAC Address: 80:c0:1e:12:24:2e
-Target IP Address: 192.168.1.74
-Target
-
-
-
-<img width="1920" height="1200" alt="Screenshot 2026-01-18 034341" src="https://github.com/user-attachments/assets/4d89c30f-88fa-43b6-a891-e91b6cc0c7fc" />
-
+<img width="1920" height="1200" alt="Screenshot 2026-01-18 034341" src="https://github.com/user-attachments/assets/175ea326-d52b-4ca7-85d2-b0f6b9c01767" />
 
 ## Status
 ✅ Lab completed successfully
@@ -357,3 +333,5 @@ Target
 
 ## 🎯 Goal
 To continue progressing towards **SOC Level 1** with a focus on defensive security and monitoring.
+
+
