@@ -283,6 +283,7 @@ The observed ICMP traffic represents normal ping activity. There were no signs o
 
 ## Evidence
 - Packet Capture: `lab4-icmp-ping-analysis.pcapng`
+<img width="1920" height="1200" alt="Screenshot 2026-01-18 032534" src="https://github.com/user-attachments/assets/207cee37-9c37-443a-a540-c6ba41aeb1cc" />
 
   
 
