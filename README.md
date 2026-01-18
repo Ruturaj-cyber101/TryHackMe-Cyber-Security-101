@@ -410,6 +410,132 @@ In this lab:
 ## ✅ Lab Status
 **Completed**
 
+
+# Lab 6 – DHCP Traffic Analysis using Wireshark
+
+## 🎯 Objective
+To analyze DHCP (Dynamic Host Configuration Protocol) traffic using Wireshark and understand how IP addresses are assigned to clients. This lab focuses on identifying DHCP Discover, Offer, Request, and ACK messages from a SOC Level 1 perspective.
+
+---
+
+## 🛠 Tools Used
+- Operating System: Windows 11
+- Tool: Wireshark
+- Network Interface: Wi-Fi
+
+---
+
+## 📌 Lab Setup
+- Wireshark installed and running
+- Active network connection
+- Packet capture started on Wi-Fi interface
+- Display filter used:
+```plaintext
+dhcp
+```
+(or)
+```plaintext
+bootp
+```
+
+---
+
+## 🧾 Lab Tasks Performed
+1. Started live packet capture on Wi-Fi interface
+2. Generated DHCP traffic using Command Prompt
+3. Applied DHCP display filter
+4. Observed DHCP Discover, Offer, Request, and ACK packets
+5. Analyzed DHCP fields and server information
+6. Captured screenshot for evidence
+7. Saved packet capture file
+8. Updated GitHub documentation
+
+---
+
+## 🔍 Observations & Analysis
+
+### 1️⃣ DHCP Discover
+- Message Type: DHCP Discover
+- Wireshark Label: BOOTREQUEST
+- Source IP: 0.0.0.0
+- Destination IP: 255.255.255.255
+
+This message is sent by the client to locate available DHCP servers on the network.
+
+---
+
+### 2️⃣ DHCP Offer
+- Offered IP Address: 192.168.1.X
+- DHCP Server IP: 192.168.1.1
+
+The DHCP server responds with an available IP address for the client.
+
+---
+
+### 3️⃣ DHCP Request
+The client requests the offered IP address from the DHCP server to confirm assignment.
+
+---
+
+### 4️⃣ DHCP ACK
+The DHCP server acknowledges the request and finalizes the IP assignment.
+
+---
+
+### 5️⃣ Protocol Characteristics
+- Protocol: DHCP
+- Transport Layer: UDP
+- Client Port: 68
+- Server Port: 67
+- OSI Layer: Application Layer
+
+---
+
+### 6️⃣ Traffic Assessment
+- Single DHCP server observed
+- No multiple offers detected
+- No abnormal IP ranges
+- No rogue DHCP behavior
+
+✅ Traffic behavior is **normal**.
+
+---
+
+## 🛡 SOC Level 1 Relevance
+SOC analysts monitor DHCP traffic to:
+- Detect rogue DHCP servers
+- Identify MITM preparation attacks
+- Detect abnormal IP assignments
+- Investigate internal network issues
+
+No indicators of compromise were identified in this capture.
+
+---
+
+## 📸 Evidence
+- Screenshot showing DHCP Discover, Offer, and ACK packets
+- <img width="1920" height="1200" alt="Screenshot 2026-01-18 040511" src="https://github.com/user-attachments/assets/baef66bb-3e08-4a07-9e25-edf21a54a6c1" />
+
+
+---
+
+## 📁 Artifacts Saved
+- lab6-dhcp-traffic-analysis.pcapng
+- DHCP analysis screenshot (.png)
+
+---
+
+## ✅ Lab Status
+**Completed**
+
+---
+
+## 🧠 Key Takeaways
+- DHCP automates IP address assignment
+- DHCP uses UDP ports 67 and 68
+- Monitoring DHCP is critical for detecting internal network threats
+- Wireshark is effective for DHCP traffic analysis
+
 ---
 
 ## 🧠 Key Learning
