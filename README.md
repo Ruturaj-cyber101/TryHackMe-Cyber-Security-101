@@ -543,7 +543,215 @@ No indicators of compromise were identified in this capture.
 - Gratuitous ARP is normal behavior
 - SOC analysts monitor ARP to detect local network attacks
 - Wireshark is effective for Layer 2 traffic analysis 
-  
+
+  ## 🧪 Lab 7 – TCP SYN / Port Scan Traffic Analysis (Wireshark)
+
+### 🎯 Objective
+Analyze TCP SYN packets to identify port scanning and reconnaissance activity from a SOC Level 1 perspective.
+
+---
+
+### 🧰 Tools Used
+- Wireshark
+- Windows 11
+- Command Prompt
+
+---
+
+### 🧱 Environment
+- OS: Windows 11
+- Network Interface: Wi-Fi
+- Capture Type: Live traffic
+
+---
+
+### 🔧 Lab Setup
+1. Open Wireshark
+2. Select Wi-Fi interface
+3. Start packet capture
+4. Generate connection attempts using Command Prompt
+5. Stop capture after traffic is generated
+
+---
+
+### 🔍 Wireshark Display Filter
+```bash
+tcp.flags.syn == 1 && tcp.flags.ack == 0
+```
+
+---
+
+### 📌 Questions & Answers
+1. Which TCP flag is mostly observed?
+   - Answer: SYN
+
+2. Is there any ACK flag in response?
+   - Answer: No ACK flag observed
+
+3. Which protocol is used?
+   - Answer: TCP
+
+---
+
+### 👀 Observations
+- Multiple TCP SYN packets detected
+- Different destination ports targeted
+- No complete TCP three-way handshake
+- Repeated SYN packets indicate probing behavior
+
+---
+
+### 🧠 Analysis
+The observed traffic pattern is consistent with **port scanning or reconnaissance activity**.  
+This behavior is often used by attackers to discover open ports and services.
+
+---
+
+### 🛡 SOC Use Case
+SOC analysts monitor SYN-only traffic to:
+- Detect early-stage attacks
+- Identify scanning attempts
+- Trigger IDS/IPS alerts
+- Correlate with threat intelligence
+
+---
+
+### 🚨 Threat Assessment
+- Activity Type: Reconnaissance
+- Severity: Low
+- Risk Level: Monitoring required
+
+---
+
+### 📸 Evidence
+- Screenshot captured showing multiple SYN packets
+- <img width="1920" height="1200" alt="Screenshot 2026-01-19 032649" src="https://github.com/user-attachments/assets/b147a2d5-7781-4e30-9087-69edd7faf3c9" />
+
+
+---
+
+### 📁 Artifacts Saved
+- lab7-port-scan-analysis.pcapng
+- Screenshot (.png)
+
+---
+
+### ✅ Lab Status
+Completed successfully
+
+---
+
+### 🧠 Key Learning
+- TCP SYN packets initiate connections
+- SYN-only traffic can indicate scanning
+- Wireshark filters help identify abnormal patterns
+- SOC analysts rely on traffic patterns, not tools alone
+
+## 🧪 Lab 8 – DHCP Traffic Analysis (Wireshark)
+
+### 🎯 Objective
+Analyze DHCP network traffic to understand how IP addresses are assigned and how SOC analysts identify abnormal DHCP behavior.
+
+---
+
+### 🧰 Tools Used
+- Wireshark
+- Windows 11
+- Active Network Connection
+
+---
+
+### 🧱 Environment
+- OS: Windows 11
+- Network Interface: Wi-Fi
+- Capture Type: Live Traffic
+
+---
+
+### 🔧 Lab Setup
+1. Open Wireshark
+2. Select the active Wi-Fi interface
+3. Start packet capture
+4. Connect to the network / renew IP address
+5. Stop capture after DHCP traffic appears
+
+---
+
+### 🔍 Wireshark Display Filter
+```bash
+dhcp
+```
+
+---
+
+### 📌 Questions & Answers
+1. What type of DHCP message is observed?
+   - Answer: BOOT REQUEST
+
+2. What is the default gateway IP address?
+   - Answer: 192.168.1.1
+
+3. What is the destination IP address?
+   - Answer: 255.255.255.255
+
+4. Is the traffic suspicious?
+   - Answer: No
+
+---
+
+### 👀 Observations
+- DHCP Discover and Request packets observed
+- Broadcast traffic used during IP assignment
+- DHCP server responds correctly
+- Normal IP leasing process detected
+
+---
+
+### 🧠 Analysis
+The traffic represents a **normal DHCP process** where a client requests an IP address from a DHCP server.  
+No abnormal behavior or rogue DHCP indicators were observed.
+
+---
+
+### 🛡 SOC Use Case
+SOC analysts monitor DHCP traffic to:
+- Detect rogue DHCP servers
+- Identify unauthorized devices
+- Monitor unusual IP assignments
+- Investigate network misconfigurations
+
+---
+
+### 🚨 Threat Assessment
+- Activity Type: Normal Network Operation
+- Severity: None
+- Risk Level: Safe
+
+---
+
+### 📸 Evidence
+- Screenshot captured showing DHCP packets
+- <img width="1920" height="1200" alt="Screenshot 2026-01-19 033120" src="https://github.com/user-attachments/assets/1c8cb9f2-6fbe-41f0-a360-ba64116b86e7" />
+
+
+---
+
+### 📁 Artifacts Saved
+- lab8-dhcp-traffic-analysis.pcapng
+- Screenshot 
+
+---
+
+### ✅ Lab Status
+Completed successfully
+
+---
+
+### 🧠 Key Learning
+- DHCP uses broadcast communication
+- BOOT REQUEST initiates IP leasing
+- DHCP analysis is critical in SOC investigations
+- Normal traffic patterns help identify anomalies
 
 ---
 
