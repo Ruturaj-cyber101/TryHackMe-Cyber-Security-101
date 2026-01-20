@@ -752,6 +752,31 @@ Completed successfully
 - BOOT REQUEST initiates IP leasing
 - DHCP analysis is critical in SOC investigations
 - Normal traffic patterns help identify anomalies
+- 
+---
+
+## 🔐 Section 6: Cryptography
+
+This section focuses on cryptography fundamentals and password security concepts commonly encountered in defensive security and SOC environments.
+
+### 🔹 Completed Rooms
+
+- **Cryptography Basics**  
+  Learned core cryptography concepts including encryption, confidentiality, and integrity.  
+  👉 [View Notes](Cryptography/Cryptography-Basics.md)
+
+- **Public Key Cryptography Basics**  
+  Studied asymmetric encryption, public/private key pairs, and secure communication methods.  
+  👉 [View Notes](Cryptography/Public-Key-Cryptography-Basics.md)
+
+- **Hashing Basics**  
+  Learned how hashing works, common algorithms, and why hashing is critical for password security.  
+  👉 [View Notes](Cryptography/Hashing-Basics.md)
+
+- **John the Ripper: The Basics**  
+  Gained hands-on understanding of password cracking techniques and the importance of strong passwords.  
+  👉 [View Notes](Cryptography/John-the-Ripper-The-Basics.md)
+
 
 ---
 
