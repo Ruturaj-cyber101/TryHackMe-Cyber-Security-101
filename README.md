@@ -795,6 +795,25 @@ In this section, I learned the fundamentals of web applications and how common w
 - Identifying common web security risks
 
 This section strengthened my foundation in web technologies and web application security.
+
+## Section 9: Offensive Security Tooling
+
+This section focuses on commonly used offensive security tools and techniques to understand how attackers perform reconnaissance and exploitation.
+
+### Completed Rooms:
+- Hydra
+- Gobuster: The Basics
+- Shells Overview
+- SQLMap: The Basics
+
+### Skills Gained:
+- Brute-force and password attack concepts
+- Web and directory enumeration
+- Understanding shells and post-exploitation access
+- Automated SQL injection testing
+- Recognizing offensive tooling from a defensive perspective
+
+These labs improved my understanding of attacker techniques, helping me better analyze and defend against real-world threats.
 ---
 
 ## 🎯 Goal
