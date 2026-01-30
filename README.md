@@ -777,7 +777,24 @@ This section focuses on cryptography fundamentals and password security concepts
   Gained hands-on understanding of password cracking techniques and the importance of strong passwords.  
   👉 [View Notes](Cryptography/John-the-Ripper-The-Basics.md)
 
+## Section 8: Web Hacking
 
+In this section, I learned the fundamentals of web applications and how common web technologies work from a security perspective.
+
+### Completed Rooms:
+- Web Application Basics
+- JavaScript Essentials
+- SQL Fundamentals
+- Burp Suite: The Basics
+
+### Skills Gained:
+- Understanding how web applications function
+- Client-side scripting fundamentals
+- Database basics and SQL concepts
+- Intercepting and analyzing HTTP traffic
+- Identifying common web security risks
+
+This section strengthened my foundation in web technologies and web application security.
 ---
 
 ## 🎯 Goal
