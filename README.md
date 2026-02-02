@@ -814,6 +814,27 @@ This section focuses on commonly used offensive security tools and techniques to
 - Recognizing offensive tooling from a defensive perspective
 
 These labs improved my understanding of attacker techniques, helping me better analyze and defend against real-world threats.
+
+## Defensive Security
+
+This section focuses on blue team concepts and defensive security practices used to monitor, detect, and respond to cyber threats.
+
+### Completed Rooms:
+- Defensive Security Intro
+- SOC Fundamentals
+- Digital Forensics Fundamentals
+- Incident Response Fundamentals
+- Logs Fundamentals
+
+### Skills Gained:
+- Understanding SOC operations
+- Log analysis and monitoring
+- Incident detection and response
+- Digital forensics basics
+- Defensive security mindset
+
+These rooms strengthened my foundation for SOC analyst and blue team roles.
+
 ---
 
 ## 🎯 Goal
