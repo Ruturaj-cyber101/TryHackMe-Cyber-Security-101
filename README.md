@@ -835,6 +835,26 @@ This section focuses on blue team concepts and defensive security practices used
 
 These rooms strengthened my foundation for SOC analyst and blue team roles.
 
+
+## Security Solutions
+
+This section focuses on core security tools and technologies used in SOC and blue team environments to detect, prevent, and manage cyber threats.
+
+### Completed Rooms:
+- Introduction to SIEM
+- Firewall Fundamentals
+- IDS Fundamentals
+- Vulnerability Scanner Overview
+
+### Skills Gained:
+- SIEM concepts and log correlation
+- Network security controls (firewalls)
+- Intrusion detection techniques
+- Vulnerability identification and management
+
+These rooms strengthened my understanding of security solutions used in real-world SOC operations.
+
+
 ---
 
 ## 🎯 Goal
