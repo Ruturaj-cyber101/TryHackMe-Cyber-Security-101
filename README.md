@@ -10,57 +10,123 @@ All rooms included here have been **personally completed by me** and are documen
 I am a motivated Cyber Security student actively building hands-on skills through structured labs on TryHackMe. My focus is on developing a strong foundation in command-line operations, networking fundamentals, and security concepts relevant to SOC (Security Operations Center) roles. I document only the labs I have personally completed to maintain accuracy and credibility in my learning journey.
 
 ---
+# 🛡️ Cyber Security 101 – Learning Journey
 
-## 📚 Completed Sections
+This repository documents my hands-on learning journey through the
+**TryHackMe – Cyber Security 101** path.  
+It covers both **offensive and defensive security fundamentals**, with a
+strong focus on **SOC-level skills**, tools, and real-world concepts.
 
-### 🔹 Start Your Cyber Security Journey
-- Offensive Security Intro
-- Defensive Security Intro
-- Search Skills
+---
 
-### 🔹 Linux Fundamentals
-- Linux Fundamentals Part 1
-- Linux Fundamentals Part 2
-- Linux Fundamentals Part 3
+## 🎯 Learning Objectives
+- Build a strong foundation in cyber security
+- Understand SOC workflows and defensive security
+- Gain hands-on experience with security tools
+- Prepare for SOC Level 1 / Cyber Security Intern roles
 
-### 🔹 Windows & Active Directory Fundamentals
-- Windows Fundamentals Part 1
-- Windows Fundamentals Part 2
-- Windows Fundamentals Part 3
-- Active Directory Basics
+---
 
-### 🔹 Command Line
-- Windows Command Line
-- Windows PowerShell
-- Linux Shells
-- Shell Scripting & Components
+## 📚 Completed Sections & Rooms
 
-- ### ### 🔹 Networking Fundamentals
+### 🖥️ Command Line
+- Windows PowerShell  
+- Linux Shells  
+- Shell Scripting & Components  
 
-- **Networking Concepts**  
-  Learned core networking principles including networks, devices, and data communication basics.
+---
 
-- **Networking Core Protocols**  
-  Studied key protocols such as TCP, UDP, and IP and their role in data transmission.
+### 🌐 Networking Fundamentals
+- Networking Concepts  
+- Networking Core Protocols  
+- Networking Essentials  
+- Networking Secure Protocols  
 
-- **Networking Essentials**  
-  Covered practical networking essentials such as addressing, traffic flow, and network components.
+---
 
-- **Networking Secure Protocols**  
-  Explored secure networking protocols and how encryption protects data in transit.
+### 🔍 Defensive Security
+- Defensive Security Introduction  
+- SOC Fundamentals  
+- Digital Forensics Fundamentals  
+- Incident Response Fundamentals  
+- Logs Fundamentals  
 
-  ### 🔹 Traffic Analysis & Packet Inspection
+---
 
-- **Wireshark: The Basics**  
-  Hands-on introduction to packet capture and network traffic analysis using Wireshark.
+### 🛠️ Defensive Security Tooling
+- CyberChef: The Basics  
+- CAPA: The Basics  
+- REMnux: Getting Started  
+- FLARE VM: Arsenal of Tools  
 
-- **TCPDUMP: The Basics**  
-  Learned command-line packet capture and traffic analysis using tcpdump.  
+---
 
-  ### 🔹 Network Reconnaissance
+### 🔐 Cryptography
+- Cryptography Basics  
+- Public Key Cryptography Basics  
+- Hashing Basics  
+- John the Ripper: The Basics  
 
-- **Nmap: The Basics**  
-  Learned basic network scanning and service discovery using Nmap.
+---
+
+### ⚔️ Exploitation Basics
+- Moniker Link  
+- Metasploit: Introduction  
+- Metasploit Exploitation  
+- Metasploit: Meterpreter  
+- Blue  
+
+---
+
+### 🌍 Web Hacking
+- Web Application Basics  
+- JavaScript Essentials  
+- SQL Fundamentals  
+- Burp Suite: The Basics  
+
+---
+
+### 🧰 Offensive Security Tooling
+- Hydra  
+- Gobuster: The Basics  
+- Shells Overview  
+- SQLmap: The Basics  
+
+---
+
+### 🛡️ Security Solutions
+- Introduction to SIEM  
+- Firewall Fundamentals  
+- IDS Fundamentals  
+- Vulnerability Scanner Overview  
+
+---
+
+## 🏆 Certification
+- ✅ **TryHackMe – Cyber Security 101 (Completed)**
+
+---
+
+## 🧠 Skills Gained
+- Cyber Security Fundamentals  
+- SOC Operations & Monitoring  
+- SIEM & Log Analysis  
+- Incident Response  
+- Network & Web Security  
+- Malware Analysis Basics  
+
+---
+
+## 🚀 Next Goals
+- SOC Level 1 Path (TryHackMe)
+- More hands-on labs & blue team practice
+- Build a strong SOC-focused portfolio
+
+---
+
+📌 *This repository reflects practical learning and hands-on completion of rooms.
+All documented rooms have been personally completed.*
+
 
 📌 Wireshark Live Traffic Analysis (Hands-On Lab)
 🔹 Lab Type
@@ -777,87 +843,6 @@ This section focuses on cryptography fundamentals and password security concepts
   Gained hands-on understanding of password cracking techniques and the importance of strong passwords.  
   👉 [View Notes](Cryptography/John-the-Ripper-The-Basics.md)
 
-## Section 8: Web Hacking
 
-In this section, I learned the fundamentals of web applications and how common web technologies work from a security perspective.
-
-### Completed Rooms:
-- Web Application Basics
-- JavaScript Essentials
-- SQL Fundamentals
-- Burp Suite: The Basics
-
-### Skills Gained:
-- Understanding how web applications function
-- Client-side scripting fundamentals
-- Database basics and SQL concepts
-- Intercepting and analyzing HTTP traffic
-- Identifying common web security risks
-
-This section strengthened my foundation in web technologies and web application security.
-
-## Section 9: Offensive Security Tooling
-
-This section focuses on commonly used offensive security tools and techniques to understand how attackers perform reconnaissance and exploitation.
-
-### Completed Rooms:
-- Hydra
-- Gobuster: The Basics
-- Shells Overview
-- SQLMap: The Basics
-
-### Skills Gained:
-- Brute-force and password attack concepts
-- Web and directory enumeration
-- Understanding shells and post-exploitation access
-- Automated SQL injection testing
-- Recognizing offensive tooling from a defensive perspective
-
-These labs improved my understanding of attacker techniques, helping me better analyze and defend against real-world threats.
-
-## Defensive Security
-
-This section focuses on blue team concepts and defensive security practices used to monitor, detect, and respond to cyber threats.
-
-### Completed Rooms:
-- Defensive Security Intro
-- SOC Fundamentals
-- Digital Forensics Fundamentals
-- Incident Response Fundamentals
-- Logs Fundamentals
-
-### Skills Gained:
-- Understanding SOC operations
-- Log analysis and monitoring
-- Incident detection and response
-- Digital forensics basics
-- Defensive security mindset
-
-These rooms strengthened my foundation for SOC analyst and blue team roles.
-
-
-## Security Solutions
-
-This section focuses on core security tools and technologies used in SOC and blue team environments to detect, prevent, and manage cyber threats.
-
-### Completed Rooms:
-- Introduction to SIEM
-- Firewall Fundamentals
-- IDS Fundamentals
-- Vulnerability Scanner Overview
-
-### Skills Gained:
-- SIEM concepts and log correlation
-- Network security controls (firewalls)
-- Intrusion detection techniques
-- Vulnerability identification and management
-
-These rooms strengthened my understanding of security solutions used in real-world SOC operations.
-
-
----
-
-## 🎯 Goal
-To continue progressing towards **SOC Level 1** with a focus on defensive security and monitoring.
 
 
